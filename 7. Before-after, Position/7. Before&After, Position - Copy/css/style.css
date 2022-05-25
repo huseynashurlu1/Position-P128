@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    padding: 0 4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* bura header aid codelardir */
+header{
+    padding: 30px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999999;
+}
+
+.header-all{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 10%;
+}
+
+.logo img{
+    width: 100%;
+}
+
+.navbar{
+    width: 90%;
+    text-align: right;
+}
+
+.navbar a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    margin-left: 2rem;
+}
+
+.navbar i{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 1rem;
+}
+
+/* Header */
+
+
+
+#Slider{
+    background-image: url(https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandtour/demo/wp-content/uploads/2016/12/pexels-photo-225630.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding: 15rem 0;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+#Slider h1{
+    font-size: 50px;
+    color: #fff;
+}
+#Slider p{
+    font-size: 16px;
+    color: #fff;
+    opacity: 0.7;
+}
+
+#Slider form{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.f-box input{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding: 10px 0;
+}
+
+.f-box i{
+    color: #333;
+    opacity: 0.6;
+}
+
+.f-box{
+    background-color: #fff;
+    border-radius: 6px;
+    width: 22%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.f-box:last-child {
+    padding: 0;
+}
+
+.f-box a{
+    background-color: #ff4a52;
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#Tour{
+    padding: 5rem 0;
+}
+
+.text{
+    text-align: center;
+}
+
+.text h1{
+    font-size: 36px;
+    color: #000;
+}
+
+.text p{
+    color: #8d9199;
+    font-size: 16px;
+}
+
+.tour-all{
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+
+.tour-all .box{
+    width: 23%;
+    height: 300px;
+    position: relative;
+    transition: .5s;
+}
+
+.tour-all .box h2{
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: #fff;
+}
+
+.tour-all .box img{
+    width: 100%;
+    height: 100%;
+    vertical-align: bottom;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.tour-all .box:hover{
+    transform: translateY(-10px);
+}
+
+#Trips{
+    padding: 5rem 0;
+}
+
+.trip-all{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.trip-all .box{
+    width: 30%;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.trip-all .box:hover{
+    transform: translateY(-10px);
+    box-shadow: 5px 9px 12px 1px #cbcbcb;
+}
+
+.trip-all .box:hover .price{
+    transform: scale(1.2);
+}
+
+.trip-all .box img{
+    width: 100%;
+    vertical-align: bottom;
+    border-radius: 5px 5px 0 0;
+}
+
+.trip-all .box .top{
+    position: relative;
+}
+
+.trip-all .box .top .price{
+    position: absolute;
+    bottom: 20px;
+    transition: .5s;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff4a52;
+    padding: 5px 15px;
+}
+
+.trip-all .box .top .sale{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #1EC6B6;
+    padding: 13px 7px;
+    border-radius: 100%;
+}
+
+.trip-all .bottom{
+    padding: 15px;
+    border: 1px solid rgba(51, 51, 51, 0.219);
+}
+
+.icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icons i{
+    font-size: 10px;
+}
+
+.icons .left, .icons .right{
+    display: flex;
+    align-items: center;
+}
+
+.icons .left i{
+    color: #1EC6B6;
+    margin-right: 4px;
+}
+
+#Why{
+    padding: 3rem 0;
+}
+
+.why-all{
+    display: flex;
+    justify-content: space-between;
+}
+
+.why-all .box{
+    width: 30%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.why-all .box img{
+    width: 50%;
+}
+
+#Video{
+    background-image: url('../photos/Capture.PNG');
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    margin: 4rem 0;
+    background-attachment: fixed;
+}

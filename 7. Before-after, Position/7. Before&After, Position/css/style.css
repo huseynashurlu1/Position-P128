@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* relative / absolute / fixed / sticky / static */
+
+
+/* .menu{
+    
+    background-color: red;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.set{
+    background-color: blue;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    left: 0;
+    top: 20%;
+    position: fixed;
+}
+
+#first{
+    width: 80%;
+    height: 200px;
+    background-color: orange;
+    position: sticky;
+    top: 0;
+}
+
+.menubar{
+    background-color: orange;
+    padding: 15px 3rem;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    bottom: 0;
+} */
+
+/* .X{
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+    position: relative;
+    margin: 200px;
+    
+}
+
+.Y{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
+
+/* .all{
+    display: flex;
+    justify-content: space-evenly;
+} */
+
+/* .box{
+    width: 30%;
+    position: relative;
+}
+
+.box img{
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.img2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+.box:hover .img2{
+    opacity: 0;
+} */
+
+/* h4{
+    position: absolute;
+    left: -50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 25px;
+    transition: 5s;
+}
+
+.box:hover h4{
+    left: 50%;
+} */
+/* .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: purple;
+    transition: .5s;
+    opacity: 1;
+} */
+
+/* .box:hover .overlay{
+    height: 0%;
+} */
+
+/* .box span{
+    background-color: blueviolet;
+    color: #fff;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    opacity: 0;
+    transition: .5s;
+}
+
+.box:hover span{
+    opacity: 1;
+    top: 50%;
+} */
+
+/* .text{
+    color: red;
+}
+
+.text::before{
+    content: '*';
+} */
+
+header{
+    background-color: #000;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+header a{
+    color: #fff;
+    font-size: 20px;
+    margin: 0 20px;
+    text-decoration: none;
+    position: relative;
+}
+
+header a::before {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    transition: .5s;
+    background-color: orange;
+}
+
+
+header a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    height: 2px;
+    width: 0%;
+    transition: .5s;
+    background-color: orange;
+}
+
+header a:hover::before{
+    width: 45%;
+}
+
+header a:hover::after{
+    width: 45%;
+}
+
+button{
+    border: 2px solid purple;
+    padding: 13px 60px;
+    border-radius: 5px;
+    margin: 100px;
+    background-color: transparent;
+    font-weight: bold;
+    color: purple;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+}
+
+button::before{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    background-color: purple;
+    transform: scale(0);
+}
+
+/* button::after{
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0%;
+    height: 100%;
+    transition: .5s;
+    background-color: rgb(172, 23, 172);
+} */
+
+button:hover::before{
+    transform: scale(1);
+}
+
+/* 
+button:hover::after{
+    width: 100%;
+} */
+
+
+button:hover{
+    color: #fff;
+}
+
+.box{
+    width: 30%;
+    margin-top: 50px;
+    position: relative;
+}
+
+.box::after{
+    z-index: -9999999999;
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    right: -25px;
+    width: 60px;
+    height: 60px;
+    background-color: blueviolet;
+}
+
+.box img{
+    width: 100%;
+    vertical-align: bottom;
+}
+
+hr{
+    width: 3px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    margin: 2rem auto;
+}
